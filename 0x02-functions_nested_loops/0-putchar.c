@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <string.h>
 #include "main.h"
 
 /**
@@ -15,7 +14,7 @@ int main(void)
 	int i;
 	char characters[8] = "_putchar";
 
-	for(i = 0; i < strlen(characters); i++)
+	for(i = 0; i < 8; i++)
 	{
 		_putchar(characters[i]);
 	}
