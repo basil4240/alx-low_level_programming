@@ -20,7 +20,7 @@ int print_last_digit(int n)
 	if (n == m)
 	{
 		_putchar(last_digit + '0');
-		return (8)
+		return (8);
 	}
 
 	_putchar(8 + '0');
