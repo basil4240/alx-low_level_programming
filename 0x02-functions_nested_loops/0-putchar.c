@@ -1,5 +1,7 @@
 #include <unistd.h>
+#include <string. h>
 #include "main.h"
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -13,12 +15,12 @@ int main(void)
 	int i;
 	char characters[8] = "_putchar";
 
-	for(i = 0; i < sizeof(characters); i++)
+	for(i = 0; i < strlen(characters); i++)
 	{
 		_putchar(characters[i]);
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 
 	return(0);
 }
