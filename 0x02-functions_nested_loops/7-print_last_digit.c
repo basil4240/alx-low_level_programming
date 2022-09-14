@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,9 +9,10 @@
  */
 int print_last_digit(int n)
 {
-	int last_digit;
+	int last_digit, abs_digit;
 
-	last_digit = n % 10;
+	abs_digit = abs(n); 
+	last_digit =  abs_digit % 10;
 
 	_putchar(last_digit + '0');
 
