@@ -20,14 +20,15 @@ void times_table(void)
 
 			if (m >= b)
 			{
-				if(m != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
 
 				int f = m / 10;
 				int l = m % 10;
+
+				if(m != 0)
+                                {
+                                        _putchar(',');
+                                        _putchar(' ');
+                                }
 
 				_putchar(f + '0');
 				_putchar(l + '0');
