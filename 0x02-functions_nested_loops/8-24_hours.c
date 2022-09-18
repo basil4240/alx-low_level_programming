@@ -8,13 +8,14 @@
 void jack_bauer(void)
 {
 	int i;
+
 	for (i = 0; i < 1440; i++)
 	{
 		int h, m;
 		char h1, h2, m1, m2;
 
-		h = i/60;
-		m = i%60;
+		h = i / 60;
+		m = i % 60;
 
 		if (h < 10)
 		{
@@ -23,22 +24,20 @@ void jack_bauer(void)
 		}
 		else
 		{
-			h1 = (h/10) + '0';
-			h2 = (h%10) + '0';
+			h1 = (h / 10) + '0';
+			h2 = (h % 10) + '0';
 		}
-
 		if (m < 10)
-                {
-                        m1 = '0';
-                        m2 = m + '0';
-                }
-                else
-                {
-                        m1 = (m/10) + '0';
-                        m2 = (m%10) + '0';
-                }
-
-
+		{
+			m1 = '0';
+			m2 = m + '0';
+		}
+		else
+		{
+			m1 = (m/10) + '0';
+			m2 = (m%10) + '0';
+		}
+		
 		_putchar(h1);
 		_putchar(h2);
 		_putchar(':');
