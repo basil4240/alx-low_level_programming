@@ -10,13 +10,14 @@ void times_table(void)
 	int b = 10;
 	int i;
 
-	for(i = 0; i < b; i++)
+	for (i = 0; i < b; i++)
 	{
 		int j;
 
-		for(j = 0; j < b; j++)
+		for (j = 0; j < b; j++)
 		{
 			int m = i * j;
+
 			if (m >= b)
 			{
 				int f = m / 10;
@@ -24,13 +25,19 @@ void times_table(void)
 
 				_putchar(f + '0');
 				_putchar(l + '0');
-				_putchar(',');
+				if (j != b - 1)
+				{
+					_putchar(',');
+				}
 				_putchar(' ');
 			}
 			else
 			{
 				_putchar(m + '0');
-				_putchar(',');
+				if (j != b - 1)
+				{
+					_putchar(',');
+				}
 				_putchar(' ');
 				_putchar(' ');
 			}
