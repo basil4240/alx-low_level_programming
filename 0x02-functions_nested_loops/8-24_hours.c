@@ -34,10 +34,10 @@ void jack_bauer(void)
 		}
 		else
 		{
-			m1 = (m/10) + '0';
-			m2 = (m%10) + '0';
+			m1 = (m / 10) + '0';
+			m2 = (m % 10) + '0';
 		}
-		
+
 		_putchar(h1);
 		_putchar(h2);
 		_putchar(':');
