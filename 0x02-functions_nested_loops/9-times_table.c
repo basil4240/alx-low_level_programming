@@ -24,18 +24,18 @@ void times_table(void)
 				int f = m / 10;
 				int l = m % 10;
 
-				if(m != 0)
-                                {
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }
-
+				if (m != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				
 				_putchar(f + '0');
 				_putchar(l + '0');
 			}
 			else
 			{
-				if (m != 0)
+				if (m != 0 || j > 0)
 				{
 					_putchar(',');
 					_putchar(' ');
