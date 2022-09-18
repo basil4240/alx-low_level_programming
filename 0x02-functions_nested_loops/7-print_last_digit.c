@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <limits.h>
 #include "main.h"
 
 /**
@@ -10,18 +9,10 @@
  */
 int print_last_digit(int n)
 {
-	int m, last_digit, abs_digit;
+	int last_digit, abs_digit;
 
-	m = INT_MIN;
 	abs_digit = abs(n);
 	last_digit =  abs_digit % 10;
-
-
-	if (n == m)
-	{
-		_putchar(last_digit + '0');
-		return (8);
-	}
 
 	_putchar(8 + '0');
 	return (last_digit);
