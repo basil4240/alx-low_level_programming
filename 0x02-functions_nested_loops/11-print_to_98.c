@@ -47,12 +47,12 @@ void oya(int n, int i)
 		_putchar(' ');
 	}
 
-	if (abs(i) >= 10 && abs(i) <=100)
+	if (abs(i) >= 10 && abs(i) < 100)
 	{
 		int f = abs(i) / 10;
 		int l = abs(i) % 10;
 
-		if(i < 0)
+		if (i < 0)
 		{
 			_putchar('-');
 		}
