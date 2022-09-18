@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 
+void oya(int, int);
 /**
  * print_to_98 - prints all natural numbers from n to 98
  * @n: Start point to print
