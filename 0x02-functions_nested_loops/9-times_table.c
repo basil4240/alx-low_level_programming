@@ -35,17 +35,13 @@ void times_table(void)
 			}
 			else
 			{
-				if(m != 0)
-                                {
-                                        _putchar(',');
-                                        _putchar(' ');
-                                }
-
-				_putchar(m + '0');
-				if (j != b - 1)
+				if (m != 0)
 				{
 					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
+				_putchar(m + '0');
 			}
 		}
 		_putchar('\n');
